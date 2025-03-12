@@ -145,6 +145,9 @@ b) As duas afirmações são verdadeiras, mas a segunda não justifica a primeir
 c) A primeira afirmação é verdadeira, e a segunda é falsa.
 
 d) A primeira afirmação é falsa, e a segunda é verdadeira.
+
+Resposta: a) As duas afirmações são verdadeiras, e a segunda justifica a primeira. <br>
+Explicação: A herança é uma característica comum entre as linguagens de programação tendo em vista a otimização do código e do processo de desenvolvimento, já que uma estrutura não precisa ser reescrita para sua implementação em outras partes do código. A segunda afirmação justifica a primeira uma vez que "extends" é o caminho usado para puxar esse bloco de comandos, conhecido como classe pai, podendo ser alterado ou reutilizado na classe filha. 
 ______
 **7) Dado o seguinte código. Indique a alternativa correta e justifique sua resposta.**
 
