@@ -22,13 +22,16 @@ var x = 5;
 console.log(y);
 let y = 10;
 ```
-a) A saída será undefined seguido de erro 
+a) A saída será undefined seguido de erro. 
 
 b) A saída será 5 seguido de 10
 
 c) A saída será undefined seguido de undefined
 
 d) A saída será erro em ambas as linhas que utilizam console.log
+
+Resposta: a) A saída será undefined seguido de erro <br>
+Explicação: Em primeiro momento a saída é undefined já que o JavaScrpit segue uma ordem sequêncial de comandos e como a variável x foi declarada com "Var", uma variável global, ela já existe no programa, porém não está definida quando x é exibido no console. Já em segundo momento acontece erro pela mesma lógica de x, em que y tende a ser impresso no console antes de ser declarado, porém por conta dele ter sido declarado com "let" ele ainda não existe no programa e por isso a mensagem de erro é apresentada. 
 
 
 **2) O seguinte código JavaScript tem um erro que impede sua execução correta. Analise e indique a opção que melhor corrige o problema. Justifique sua resposta.**
