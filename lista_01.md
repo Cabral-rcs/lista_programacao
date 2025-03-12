@@ -90,6 +90,8 @@ c) O código imprime 50.
 
 d) O código gera um erro.
 
+Resposta: b) O código imprime 200. <br>
+Explicação: A estrutura de loop "Switch" roda em sequência todos os seus casos. A questão imprime o valor errado já que não existe o elemento Break, no caso de "Eletrônico", que interrompe o fluxo de casos quando um deles é atendido. Portanto, mesmo o caso "Eletrônico" existindo, o programa continua rodando e reflete o resultado errado. 
 ______
 **4) Ao executar esse código, qual será a saída no console? Indique a alternativa correta e justifique sua resposta.**
 ```javascript
