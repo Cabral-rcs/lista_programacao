@@ -108,6 +108,10 @@ b) 6
 c) 18
 
 d) 24
+
+Resposta: d) 24
+Explicação: Uma lista "numeros" é declarada e guarda dentro de um array alguns números, depois disso uma variável é declarada para abrigar uma série de transformações no array inicial. "numeros.map(x => x * 2) é um método que cria um novo array em que os números originais da lista são dobrados por uma função de seta. "filter(x => x > 5)" também é um método, porém ele seleciona quais valores do array gerados anteriormente irão fazer parte do novo array, no caso são os números maiores que 5, através da função de seta. E por fim, "reduce((a, b) => a + b, 0)" pega todos os elementos do array anterior e reduz em um único valor, sendo o parâmetro "a" o montante, o "b" o elemento a ser somado e o "0" como valor inical da soma. 
+
 ______
 **5) Qual será o conteúdo do array lista após a execução do código? Indique a alternativa correta e justifique sua resposta.**
 
