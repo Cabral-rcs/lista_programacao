@@ -128,6 +128,9 @@ b) ["banana", "abacaxi", "manga"]
 c) ["banana", "abacaxi", "manga", "laranja"]
 
 d) ["banana", "maçã", "uva", "abacaxi", "manga"]
+
+Resposta: c) ["banana", "abacaxi", "manga", "laranja"]
+Explicação: O método splice aceita argumentos como Início: Em qual indice do array a modificação será iniciada, Remover: Quantos ítens da lista serão removidos apartir do início e Adição de Ítens: Adiciona quais elementos serão acrescentados no array apartir da posição de início. 
 ______
 **6) Abaixo há duas afirmações sobre herança em JavaScript. Indique a alternativa correta e justifique sua resposta**
 
