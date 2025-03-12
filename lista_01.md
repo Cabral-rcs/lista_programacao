@@ -54,6 +54,9 @@ c) Substituir if (a || b === 0) por if (a && b === 0)
 
 d) Remover completamente a verificação if (a || b === 0)
 
+Resposta: b) Substituir if (a || b === 0) por if (a === 0 && b === 0) <br>
+Explicação: Os operadores lógicos separam grupos de condição e, portanto, os grupos da estrutura condicional if são: (a) e (b === 0). Logo, ao se tratar de pelo menos uma condição verdadeira como base para expressar " return "Erro: número inválido";" ao imprimir "a", sem nenhuma condição, a liberação do comando é sempre verdadeira. Ao substituir por dois novos grupos que precisam ser iguais a 0 o problema do parâmetro "a" é resolvido, ja que agora ele passa a receber uma condição.  
+
 ______
 **3) Ao executar esse código, qual será a saída no console? Indique a alternativa correta e justifique sua resposta.**
 ```javascript
