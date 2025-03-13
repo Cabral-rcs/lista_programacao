@@ -245,3 +245,37 @@ console.log(somaArray([1, 2, 3, 4]));
 - Uma classe `Livro` que herda de `Produto` e modifica o método `calcularDesconto()`, aplicando um desconto de 20% no preço dos livros.
 
 Explique como funciona a herança nesse contexto e como você implementaria a modificação do método na classe `Livro`.
+
+```javascript
+
+class Produtos {
+    constructor(nome, preco){
+        this.nome = nome;
+        this.preco = preco;
+    }
+
+    calcularDesconto(nome, preco){
+        this.desconto = preco * 0.9;
+        console.log('O produto:', nome+ ', custa:', preco+ ', porém com o desconto de 10% fica:', this.desconto.toFixed(2),'R$');
+    }
+};
+
+class Livros extends Produtos{
+    constructor(nome, preco){
+        super(nome,preco);
+    };
+    calcularDesconto(nome, preco){
+        this.desconto = preco * 0.8;
+        console.log('O livro:', nome+ ', custa:', preco+ ', porém com o desconto de 20% fica:', this.desconto.toFixed(2),'R$');
+    }
+};
+
+const abajur = new Produtos('Abajur', 100);
+abajur.calcularDesconto('Abajur', 100);
+
+const livro = new Livros('Teste', 500);
+livro.calcularDesconto('Teste', 500);
+```
+<br>
+
+Explicação: Crio uma classe pai chamada "Produtos" que possui como atributos "nome" e "preco" além de um método chamado "calcularDesconto" que possui como parâmetro os atributos da classe. além disso, defino qual será o desconto tendo como base o "this.desconto" que recebe o parâmetro "preco" e multiplica-o por 0.9 e no final imprimo no console todas as informações. Em seguida, crio uma classe Livros que é extendida com "extends" da classe Produtos, já que seus atributos seguem sendo os mesmo (Herança). Utilizo o "super" para trazer os atributos da classe "Produtos" para a classe filha e altero o método "calcularDesconto" ao usar o "this.desconto" com base em 20% de desconto que foi resolvido multiplicando o parâmetro "preco" por 0.8. Por fim, crio um objeto "const abajur" e adiciono ele a classe Produtos definindo seu nome e preço já que são os atributos da classe e depois disso chamo um método para aquele objeto através de "abajur.calcularDesconto('Abajur', 100)". A lógica se repete para o livro adicionado na sequência. 
