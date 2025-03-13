@@ -213,7 +213,6 @@ ______
 
 # Questões dissertativas
 9) O seguinte código deve retornar a soma do dobro dos números de um array, mas contém erros. Identifique os problema e corrija o código para que funcione corretamente. Adicione comentários ao código explicado sua solução para cada problema.
-
 ```javascript
 function somaArray(numeros) {
 
@@ -224,7 +223,19 @@ function somaArray(numeros) {
 }
 console.log(somaArray([1, 2, 3, 4]));
 ```
-______
+Alterações:
+```javascript
+function somaArray(numeros) {
+    let soma = 0; // Declaro a variável soma para que ela não seja indefinida.
+    for (i = 0; i < numeros.length; i++) { // Substituo "Size" por "Length" que trata sobre o tamanho da lista
+        soma += 2*numeros[i]; // Adiciono o + para que o valor some um novo número ao que já existia no índice i anterior
+    }
+    return soma;
+}
+console.log(somaArray([1, 2, 3, 4]));
+```
+<br>
+
 10) Crie um exemplo prático no qual você tenha duas classes:
 
 - Uma classe `Produto` com atributos `nome` e `preco`, e um método `calcularDesconto()` que aplica um desconto fixo de 10% no preço do produto.
