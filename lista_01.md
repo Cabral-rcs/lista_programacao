@@ -191,6 +191,9 @@ c) Apenas II é verdadeira.
 
 d) Apenas I é verdadeira.
 
+Resposta: a) I e II são verdadeiras.
+Explicação: A classe Funcionario é uma classe filha que estende a classe Pai, Pessoa, e por isso ela pode acessar seus métodos e atributos. Além disso, o super caracteriza que aquele método, mesmo existindo de maneira diferente na classe filha, é puxado da classe Pessoa. E por fim, a afirmação III é falsa por alegar que o JavaScript não aceita herança de classes. 
+
 ______
 
 **8) Analise as afirmações a seguir. Indique a alternativa correta e justifique sua resposta.**
