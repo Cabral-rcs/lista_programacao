@@ -109,7 +109,7 @@ c) 18
 
 d) 24
 
-Resposta: d) 24
+Resposta: d) 24 <br>
 Explicação: Uma lista "numeros" é declarada e guarda dentro de um array alguns números, depois disso uma variável é declarada para abrigar uma série de transformações no array inicial. "numeros.map(x => x * 2) é um método que cria um novo array em que os números originais da lista são dobrados por uma função de seta. "filter(x => x > 5)" também é um método, porém ele seleciona quais valores do array gerados anteriormente irão fazer parte do novo array, no caso são os números maiores que 5, através da função de seta. E por fim, "reduce((a, b) => a + b, 0)" pega todos os elementos do array anterior e reduz em um único valor, sendo o parâmetro "a" o montante, o "b" o elemento a ser somado e o "0" como valor inical da soma. 
 
 ______
@@ -129,7 +129,7 @@ c) ["banana", "abacaxi", "manga", "laranja"]
 
 d) ["banana", "maçã", "uva", "abacaxi", "manga"]
 
-Resposta: c) ["banana", "abacaxi", "manga", "laranja"]
+Resposta: c) ["banana", "abacaxi", "manga", "laranja"] <br>
 Explicação: O método splice aceita argumentos como Início: Em qual indice do array a modificação será iniciada, Remover: Quantos ítens da lista serão removidos apartir do início e Adição de Ítens: Adiciona quais elementos serão acrescentados no array apartir da posição de início. 
 ______
 **6) Abaixo há duas afirmações sobre herança em JavaScript. Indique a alternativa correta e justifique sua resposta**
@@ -191,7 +191,7 @@ c) Apenas II é verdadeira.
 
 d) Apenas I é verdadeira.
 
-Resposta: a) I e II são verdadeiras.
+Resposta: a) I e II são verdadeiras. <br>
 Explicação: A classe Funcionario é uma classe filha que estende a classe Pai, Pessoa, e por isso ela pode acessar seus métodos e atributos. Além disso, o super caracteriza que aquele método, mesmo existindo de maneira diferente na classe filha, é puxado da classe Pessoa. E por fim, a afirmação III é falsa por alegar que o JavaScript não aceita herança de classes. 
 
 ______
@@ -208,6 +208,9 @@ b) A asserção é verdadeira e a razão é falsa.
 c) A asserção é verdadeira e a razão é verdadeira, mas a razão não explica a asserção.
 
 d) A asserção é verdadeira e a razão é verdadeira, e a razão explica a asserção.
+
+Resposta: b) A asserção é verdadeira e a razão é falsa. <br>
+Explicação: A asserção está correta porque o polimorfismo permite que objetos de classes distintas respondam a um mesmo método. Já a razão é falsa, uma vez que na linguagem JavaScrpit dois métodos com o mesmo nome terá o primeiro subescrito pelo último.  
 
 ______
 
