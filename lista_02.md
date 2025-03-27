@@ -246,8 +246,9 @@ B) Gerenciar eventos de entrada do usuário, como cliques e toques na tela, perm
 
 C) Renderizar gráficos otimizados para jogos 2D e garantir uma taxa de quadros estável.
 
-D) Criar animações automáticas para sprites e objetos interativos sem necessidade de programação de movimentação.
+D) Criar animações automáticas para sprites e objetos interativos sem necessidade de programação de movimentação. <br>
 
+Resposta: A) Simular física avançada, incluindo corpos rígidos, colisões complexas e interação entre objetos com gravidade e forças.
 ______
 
 # Questões dissertativas
