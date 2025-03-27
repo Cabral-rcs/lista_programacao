@@ -205,7 +205,7 @@ Dispositivo 3 ligado com bateria extra. Energia restante: 200
 
 Dispositivo 4 não pode ser ligado. Energia insuficiente.
 
-Dispositivo 5 não pode ser ligado. Energia insuficiente.
+Dispositivo 5 não pode ser ligado. Energia insuficiente. <br> <br>
 
 Resposta: D)
 Dispositivo 1 ligado. Energia restante: 900
