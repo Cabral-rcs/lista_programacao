@@ -47,9 +47,9 @@ B) O código avalia a expressão booleana, imprime `false`, calcula o produto do
 
 C) O código avalia a expressão booleana, imprime `true` e, em seguida, verifica se o número 6 está na lista.
 
-D) O código avalia a expressão booleana, imprime `false` e ordena os valores em ordem crescente.
+D) O código avalia a expressão booleana, imprime `false` e ordena os valores em ordem crescente.<br>
 
-
+Resposta: A) O código avalia a expressão booleana, imprime `true`, calcula o produto dos números na lista e imprime o resultado no console.
 ______
 
 **2)** O código a seguir contém duas funções que calculam o limite de crédito de um cliente com base nos seus gastos e na renda mensal.
