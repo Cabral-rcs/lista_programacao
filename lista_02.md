@@ -293,7 +293,61 @@ Define os valores dos atributos modelo e ano com os valores passados como parâm
 Método CalcularConsumo():
 ```
 Implementação genérica para cálculo de consumo, a ser sobrescrita pelas subclasses.
-Agora, implemente as classes Carro e Moto, garantindo que ambas herdem de Veiculo e possuam métodos específicos para calcular o consumo de combustível com base na quilometragem e eficiência do veículo.
+Agora, implemente as classes Carro e Moto, garantindo que ambas herdem de Veiculo e possuam métodos específicos para calcular o consumo de combustível com base na quilometragem e eficiência do veículo. <br>
+
+Resposta: 
+```javascript
+class Veiculos{
+    constructor(modelo, ano, distancia, litros){
+        this.modelo = modelo,
+        this.ano = ano,
+        this.distancia = distancia,
+        this.litros = litros;
+    }
+    calcularConsumo(){
+        this.rendimento = this.distancia / this.litros
+        console.log(this.rendimento)
+    }
+}
+class Carro extends Veiculos{
+    constructor(modelo, ano, distancia, litros, peso){
+        super(modelo, ano, distancia, litros)
+        this.peso = peso;
+    }
+    calcularConsumo(){
+        if (this.peso == 'G'){
+            this.rendimento = (this.distancia / this.litros) * 0.6 
+        } else if (this.peso == 'M'){
+            this.rendimento = (this.distancia / this.litros) * 0,5
+        } else{
+            this.rendimento = (this.distancia / this.litros) * 0,4
+        }
+        console.log(`O rendimento do ${this.modelo}, do ano de ${this.ano}, de peso ${this.peso} é ${this.rendimento}km/L`)
+    }
+}
+class Motos extends Veiculos{
+    constructor(modelo, ano, distancia, litros, roda){
+        super(modelo,ano,distancia,litros)
+        this.roda = roda;
+    }
+    calcularConsumo(){
+        if (this.roda == 'Estrada'){
+            this.rendimento = (this.distancia / this.litros) * 0.9
+        } else if (this.roda == 'Corrida'){
+            this.rendimento = (this.distancia / this.litros) * 0.8
+        } else{
+            this.rendimento = (this.distancia / this.litros) * 0.7
+        }
+        console.log(`O rendimento da ${this.modelo}, do ano de ${this.ano}, com a roda de ${this.roda} é ${this.rendimento}km/L`)
+    }
+}
+
+var celta = new Carro('Celta', 2013, 300, 5, 'G')
+celta.calcularConsumo()
+
+var moto = new Motos('XT', 2019, 200, 4, 'Corrida')
+moto.calcularConsumo()
+``` 
 ______
 
 **9)** Você é um cientista da NASA e está ajudando no desenvolvimento de um sistema de pouso para sondas espaciais em Marte. Seu objetivo é calcular o tempo necessário para que a sonda reduza sua velocidade até um nível seguro para pouso, considerando uma velocidade inicial de entrada na atmosfera marciana e uma taxa de desaceleração constante causada pelo atrito atmosférico e retrofoguetes.
