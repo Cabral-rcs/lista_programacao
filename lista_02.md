@@ -266,7 +266,18 @@ Pedidos de R$200,00 ou mais → "Frete grátis!"
 Implemente um pseudocódigo que receba o valor total da compra e exiba a classificação correta do frete para o cliente.
 <br>
 Resposta: 
-Começe criando uma variável para armazenar o valor total da compra, depois crie uma estrutura condicional para 3 possíveis condições de frete em realção ao valor total da compra. No primeiro caso, se o valor total da compra for menor que 50 reais, imprima no console "Frete não disponível", Se essa condição não for verdadeira verifique se o total do pedido é maior ou igual a 50 e se é menor ou igual a 199 reais, caso essa condição seja verdadeira imprima no console "Frete com custo adicional" e caso nenhuma das condições anteriores sejam verdadeiras, imprima no console "Frete grátis".   ______
+```javascript
+
+var valorTotal = 149.99;
+
+if (valorTotal < 50){
+    console.log('Frete não disponível')
+} else if ( valorTotal >= 50 && valorTotal <= 199){
+    console.log('Frete com custo adicional')
+}else {
+    console.log('Frete grátis')
+}
+```   
 
 **8)** Considere a implementação da classe base Veiculo em um sistema de modelagem de veículos. Sua tarefa é implementar, utilizando pseudocódigo, as classes derivadas Carro e Moto, que herdam da classe Veiculo, adicionando atributos específicos e métodos para calcular o consumo de combustível de um carro e de uma moto, respectivamente.
 
