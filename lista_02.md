@@ -363,8 +363,29 @@ Considere a fórumla de atualização velocidade:
 Seu programa deve determinar quanto tempo será necessário para que a sonda atinja uma velocidade segura de pouso, sem ultrapassar os limites estabelecidos. <br>
 
 Resposta: 
-Começe definindo variáveis que contenham valores para: velocidadeInicial, para a velocidade antes do início do pouso, desaceleracao, para armazenar a taxa de redução da velocidade, e a velocidadeIdeal, velocidade desejada para realizar um pouso seguro. Depois disso, use a equação matemática para descobrir o tempo, assim velocidadeIdeal = velocidadeInicial - desaceleracao * tempo. Diante disso, basta criar uma variável para o tempo e atribui seu valor a expressão isolada do tempo: tempo = (velocidadeIdeal - velocidadeInicial) / (-aceleracao). Logo basta imprimri no console o valor do tempo necessário para redução da velocidade visando um pouso seguro. 
+```javascript
+var velocidadeInicial = 100;
+var velocidadeIdeal = 50;
+var desaceleracao = 5;
+var desaceleracaoMinima = 3;
+var tempoMaximo = 20;
 
+var tempo = (velocidadeIdeal - velocidadeInicial) / (- desaceleracao)
+
+if (tempo < tempoMaximo && desaceleracao > desaceleracaoMinima){
+    console.log('O pouso foi realizado de maneira segura!')
+    console.log(`Já que o tempo foi de: ${tempo} sendo o tempo máximo de: ${tempoMaximo}`);
+    console.log(`Já que a desaceleração foi de: ${desaceleracao} sendo a desaceleracão mínima de: ${desaceleracaoMinima}`);
+} else {
+    console.log('O pouso conteve instabilidades')
+    if (desaceleracao < desaceleracaoMinima) {
+        console.log('A desacelereação foi menor que o esperado')
+    } 
+    if (tempo > tempoMaximo){
+        console.log('O tempo de pouso foi maior que o esperado')
+    }
+}
+```
 ______
 
 **10)** Em um sistema de análise financeira, as operações de investimento de uma empresa podem ser representadas por matrizes, onde cada linha representa um tipo de investimento e cada coluna representa um período de tempo.
