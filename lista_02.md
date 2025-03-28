@@ -417,4 +417,52 @@ totalInvestimentos <- SomarMatrizesInvestimento(investimentosAno1, investimentos
 Escrever("Total de investimentos acumulados:")  
 ImprimirMatriz(totalInvestimentos)  
 ```
-Agora, implemente a função MultiplicarMatrizesInvestimento(matrizA, matrizB), que multiplica as duas matrizes, simulando o efeito de diferentes fatores de crescimento e impacto financeiro nos investimentos ao longo do tempo.
+Agora, implemente a função MultiplicarMatrizesInvestimento(matrizA, matrizB), que multiplica as duas matrizes, simulando o efeito de diferentes fatores de crescimento e impacto financeiro nos investimentos ao longo do tempo. <br>
+
+Resposta: 
+```javascript
+function multiplicarMatrizes(matrizA, matrizB) {
+    // Verifica se as matrizes podem ser multiplicadas
+    if (matrizA[0].length !== matrizB.length) {
+        return "Não é possível multiplicar: colunas de A ≠ linhas de B";
+    }
+
+    // Cria a matriz resultado
+    const resultado = [];
+    
+    for (let i = 0; i < matrizA.length; i++) {
+        resultado[i] = [];
+        for (let j = 0; j < matrizB[0].length; j++) {
+            let multiplicacao = 0;
+            for (let k = 0; k < matrizB.length; k++) {
+                multiplicacao += matrizA[i][k] * matrizB[k][j];
+            }
+            resultado[i][j] = multiplicacao;
+        }
+    }
+    
+    return resultado;
+}
+
+// Função para mostrar matrizes de forma simples
+function mostrarMatriz(matriz) {
+    console.log(matriz.map(linha => 
+        `[${linha.map(valor => valor.toString().padStart(6)).join(', ')}]`
+    ).join('\n'));
+}
+
+const investimentos = [
+    [1000, 2000],  
+    [1500, 2500]   
+];
+
+const fatores = [
+    [1.1, 0.9],    
+    [1.2, 0.8]    
+];
+
+const resultado = multiplicarMatrizes(investimentos, fatores);
+
+console.log("\nResultado da Multiplicação:");
+mostrarMatriz(resultado);
+```
